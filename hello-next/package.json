@@ -2,7 +2,6 @@
   "name": "hello-next",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "dev": "next",
     "build": "next build",
@@ -15,5 +14,11 @@
     "next": "^8.0.0",
     "react": "^16.8.1",
     "react-dom": "^16.8.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.2",
+    "@types/react-dom": "^16.8.0",
+    "@zeit/next-typescript": "^1.1.1",
+    "typescript": "^3.3.3"
   }
 }
