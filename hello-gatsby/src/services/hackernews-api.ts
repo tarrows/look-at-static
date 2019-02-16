@@ -30,6 +30,7 @@ const getPageValues = ({ begin, end, items }: Page<Story>) => items.slice(begin,
 
 const hackernewsApi = {
   getStoriesByPage: (ids: number[], page: number) => {
+    console.log("GetStoryByPage called")
     const { begin, end } = getPageSlice(PAGE_LIMIT, page);
     const activeIds = getPageValues({ begin, end, items: ids.map(i => ({id: i} as Story)) });
     const storyPromises = activeIds.map(story => hackernewsApi.getStory(story.id));
