@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 // import './App.css';
 import Clock from './components/Clock'
+import SimpleList from './components/SimpleList'
+import SimpleForm from './components/SimpleForm'
+import Calculator from './components/Calculator'
 
 class App extends Component {
   render() {
@@ -24,6 +27,9 @@ class App extends Component {
         </header>
       */}
         <Clock message={"HELLO, WORLD!"} />
+        <Calculator />
+        <SimpleForm />
+        <SimpleList items={[{id: 1, name: "foo"}, {id: 2, name: "bar"}]} />
       </div>
     );
   }
