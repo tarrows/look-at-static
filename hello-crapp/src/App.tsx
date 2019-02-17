@@ -7,6 +7,7 @@ import SimpleForm from './components/SimpleForm'
 import Calculator from './components/Calculator'
 import SignUpDialog from './components/SignUpDialog';
 import HooksExample from './components/HooksExample';
+import EffectHook from './components/EffectHook';
 
 class App extends Component {
   render() {
@@ -29,7 +30,10 @@ class App extends Component {
         </header>
       */}
         <Clock message={"HELLO, WORLD!"} />
+        <hr />
+        <EffectHook />
         <HooksExample />
+        <hr />
         <SignUpDialog />
         <Calculator />
         <SimpleForm />
