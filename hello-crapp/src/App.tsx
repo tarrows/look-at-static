@@ -5,6 +5,8 @@ import Clock from './components/Clock'
 import SimpleList from './components/SimpleList'
 import SimpleForm from './components/SimpleForm'
 import Calculator from './components/Calculator'
+import SignUpDialog from './components/SignUpDialog';
+import HooksExample from './components/HooksExample';
 
 class App extends Component {
   render() {
@@ -27,6 +29,8 @@ class App extends Component {
         </header>
       */}
         <Clock message={"HELLO, WORLD!"} />
+        <HooksExample />
+        <SignUpDialog />
         <Calculator />
         <SimpleForm />
         <SimpleList items={[{id: 1, name: "foo"}, {id: 2, name: "bar"}]} />
