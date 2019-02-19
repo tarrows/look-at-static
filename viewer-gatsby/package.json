@@ -1,0 +1,23 @@
+{
+  "name": "viewer-gatsby",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "gatsby": "^2.1.4",
+    "gatsby-plugin-typescript": "^2.0.8",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.3",
+    "@types/react-dom": "^16.8.2",
+    "typescript": "^3.3.3"
+  }
+}
