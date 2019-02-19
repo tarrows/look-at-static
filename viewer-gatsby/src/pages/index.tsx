@@ -1,8 +1,9 @@
 import * as React from 'react'
-import MyHelmet from '../components/Helmet';
+import HTMLHeader from '../components/HTMLHeader';
 import QueryForm from '../components/molecules/QueryForm';
 
-const Index: React.FC<{}> = () => (<><MyHelmet></MyHelmet>
+const Index: React.FC<{}> = () => (<>
+<HTMLHeader></HTMLHeader>
 <QueryForm></QueryForm>
 </>)
 

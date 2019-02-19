@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Helmet } from 'react-helmet'
 
-const MyHelmet: React.FC = () => (
+const HTMLHeader: React.FC = () => (
   <Helmet>
     <meta charSet="utf-8" />
     <title>Data Viewer</title>
@@ -10,4 +10,4 @@ const MyHelmet: React.FC = () => (
   </Helmet>
 )
 
-export default MyHelmet
+export default HTMLHeader
