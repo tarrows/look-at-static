@@ -7,9 +7,11 @@ export interface TodoListProps {
 }
 
 const TodoList: React.FC<TodoListProps> = ({ todos, toggleTodo }) => (
-  <ul>
-    {todos.map(todo => <Todo key={todo.id} {...todo} onClick={() => toggleTodo(todo.id)} />)}
-  </ul>
+  <div className="nes-container is-rounded">
+    <ul className="nes-list is-circle">
+      {todos.map(todo => <Todo key={todo.id} {...todo} onClick={() => toggleTodo(todo.id)} />)}
+    </ul>
+  </div>
 )
 
 export default TodoList

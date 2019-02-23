@@ -1,5 +1,7 @@
+@import "~nes.css/css/nes.css";
+
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {

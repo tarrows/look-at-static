@@ -12,15 +12,17 @@ const AddTodo: React.FC<AddTodoProps> = ({ dispatch }) => {
   let input: HTMLInputElement
 
   return (
-    <div>
+    <div className="nes-container is-rounded">
       <form onSubmit={(event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault()
         if (!input.value.trim()) { return }
         dispatch(addTodo(input.value))
         input.value = ''
       }}>
-        <input ref={(node) => node ? (input = node) : '' } />
-        <button type="submit">Add Todo</button>
+        <div className="nes-field is-inline">
+          <input className="nes-input" type="text" ref={(node) => node ? (input = node) : '' } />
+          <button className="nes-btn is-primary" type="submit">Add Todo</button>
+        </div>
       </form>
     </div>
   )

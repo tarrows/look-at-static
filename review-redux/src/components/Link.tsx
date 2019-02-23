@@ -7,7 +7,7 @@ export interface LinkProps {
 }
 
 const Link: React.FC<LinkProps> = ({ active, children, onClick }) => (
-  <button onClick={onClick} disabled={active} style={{ marginLeft: '4px' }} >{children}</button>
+  <button className="nes-btn" onClick={onClick} disabled={active} style={{ marginLeft: '4px' }} >{children}</button>
 )
 
 export default Link
