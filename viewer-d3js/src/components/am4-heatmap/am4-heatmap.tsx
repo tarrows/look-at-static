@@ -66,11 +66,12 @@ class Am4Heatmap extends React.Component {
 	    handleHover(event.target);
     })
 
-    function handleHover(column: any) { // am4charts.Column
+    const handleHover = (column: any) => { // am4charts.Column 
       if (!column.dataItem) {
         return
       }
 
+      // Property 'value' does not exist on type 'DataItem'. Did you mean 'values'?
 	    if (!isNaN(column.dataItem.value)) {
 		    heatLegend.valueAxis.showTooltipAt(column.dataItem.value)
 	    } else {
@@ -99,3 +100,5 @@ class Am4Heatmap extends React.Component {
     );
   }
 }
+
+export default Am4Heatmap
