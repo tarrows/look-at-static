@@ -7,12 +7,16 @@ import TreeInteractive from './tree-interactive'
 import SvgTree, { SvgTreeProps } from './elements/svg-tree'
 
 const Default = () => (
-  <TreeInteractive svgWidth={800} svgHeight={600} />
+  <TreeInteractive svgWidth={800} svgHeight={600} 
+    updateMousePos={() => {console.log('update mouse pos')}}/>
 )
 
 const ElementsOnly = () => {
   const tree: SvgTreeProps = {
-    nodes: {0: {x: 100, y: 200}, 1: {x: 300, y: 50}},
+    nodes: {
+      0: {x: 100, y: 200, color: '#666', handler: {}}, 
+      1: {x: 300, y: 50, color: '#666', handler: {}}
+    },
     edges: {0: 1}
   }
 

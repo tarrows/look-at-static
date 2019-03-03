@@ -14,9 +14,8 @@ const SvgTree: React.FC<SvgTreeProps> = ({ nodes, edges }) => (
       <TreeNode key={id} {...node} />
     ))}
     {Object.entries(edges).map(([from, to]) => (
-      <TreeEdge key={`${from}:${to}`} 
-        from={{...nodes[parseInt(from)]}}
-        to={{...nodes[to]}} />
+      <TreeEdge key={`${from}:${to}`}
+        from={{...nodes[parseInt(from)]}} to={{...nodes[to]}} />
     ))}
   </g>
 )
