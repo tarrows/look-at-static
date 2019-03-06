@@ -1,13 +1,12 @@
 // import Link from 'next/link'
-import Header from '../components/Header'
-import Navbar from '../components/organisms/navbar'
+import AppLayout from '../src/components/layout/app-layout'
+import Navbar from '../src/components/organisms/navbar'
 
 const index = () => (
-  <div>
-    <Header />
+  <AppLayout>
     <p>Hello Next.js</p>
     <Navbar />
-  </div>
+  </AppLayout>
 )
 
 export default index
