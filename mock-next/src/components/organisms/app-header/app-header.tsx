@@ -1,18 +1,21 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
+import color from '../../constants/color'
+
 interface AppHeaderProps {}
 
 const AppHeader: React.FC<AppHeaderProps> = () => {
   return (
     <Wrapper>
       <HeaderSection>
-          <HeaderItemSelected>Home</HeaderItemSelected>
-          <HeaderItem>Inbox</HeaderItem>
+        <HeaderLogo><i className="material-icons">memory</i></HeaderLogo>
+        <HeaderItemSelected>Home</HeaderItemSelected>
+        <HeaderItem>Inbox</HeaderItem>
       </HeaderSection>
       <HeaderSection>
-          <HeaderItem>Settings</HeaderItem>
-          <HeaderItem>Feedback</HeaderItem>
+        <HeaderItem>Settings</HeaderItem>
+        <HeaderItem>Feedback</HeaderItem>
       </HeaderSection>
     </Wrapper>
   )
@@ -33,8 +36,8 @@ const Wrapper = styled.div`
    */
   justify-content: space-between;
 
-  padding: 10px;
-  background-color: #56727C;
+  padding: 0 10px;
+  background-color: ${ color().base };
 `
 
 const HeaderSection = styled.div`
@@ -52,23 +55,25 @@ const HeaderSection = styled.div`
   align-items: center;
 `
 
-const HeaderItem = styled.div`
+const HeaderItemBase = styled.div`
   padding: 5px 15px;
   font-size: 12px;
 `
 
-const HeaderItems = styled(HeaderItem)`
+const HeaderItem = styled(HeaderItemBase)`
   & + & {
     margin-left: 5px;
   }
 `
 
 const HeaderItemSelected = styled(HeaderItem)`
-  color: #FFFFFF;
-  background-color: #415F69;
-  border-radius: 4px;
+  color: rgb(103, 197, 222);
+  border-bottom: solid 2px rgb(103, 197, 222);
 `
 
-
+const HeaderLogo = styled(HeaderItem)`
+  font-size: 20px;
+  line-height: 0;
+`
 
 export default AppHeader
