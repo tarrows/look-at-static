@@ -1,6 +1,7 @@
 import * as React from 'react'
 
-const GlobalStyles = () => (
+const GlobalStyles = () => (<></>)
+  {/*
   <style jsx global>{`
     body {
       margin: 0;
@@ -17,6 +18,7 @@ const GlobalStyles = () => (
       monospace;
     }
   `}</style>
-)
+  */}
+// )
 
 export default GlobalStyles

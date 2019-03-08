@@ -1,5 +1,4 @@
 import * as React from 'react'
-import GlobalStyles from '../global-styles'
 import HtmlHead from '../html-head'
 
 interface AppLayoutProps {
@@ -8,7 +7,6 @@ interface AppLayoutProps {
 
 const AppLayout: React.FC<AppLayoutProps> = (props) => (
   <div>
-    <GlobalStyles />
     <HtmlHead />
     {props.children}
   </div>
