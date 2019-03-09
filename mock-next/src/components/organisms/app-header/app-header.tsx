@@ -37,7 +37,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
 
   padding: 0 10px;
-  background-color: ${ color().base };
+  background-color: ${ color().accent };
 `
 
 const HeaderSection = styled.div`
