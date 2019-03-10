@@ -21,8 +21,8 @@ const index = () => (
     <div className="container">
       <p style={{backgroundColor: 'pink'}}>I will be a header</p>
       <StreamList posts={posts} />
-      <Footer />
     </div>
+    <Footer />
   </AppLayout>
 )
 
