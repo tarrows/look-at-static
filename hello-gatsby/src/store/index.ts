@@ -2,10 +2,10 @@ import { applyMiddleware, createStore } from 'redux'
 import createSagaMiddleware from 'redux-saga'
 import logger from 'redux-logger'
 
-import { StoryState } from '../services/hackernews-actions'
+import { StoryState } from '../services/hackernews/hackernews-actions'
 // import { initialState } from '../services/hackernews-actions';
-import story from '../services/hackernews-reducer'
-import rootSaga from '../services/hackernews-saga'
+import story from '../services/hackernews/hackernews-reducer'
+import rootSaga from '../services/hackernews/hackernews-saga'
 
 const configureStore = (initialState: StoryState) => {
   console.log("configureStore called")
