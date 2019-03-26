@@ -10,7 +10,7 @@ const initialState: WebStorageState = {
   storage: {}
 }
 
-const storageReducer: Reducer<WebStorageState, acts.SetAction | acts.GetAction> = (state = initialState, action) => {
+const storage: Reducer<WebStorageState, acts.SetAction | acts.GetAction> = (state = initialState, action) => {
   switch (action.type) {
     case acts.REQUEST_GET_ITEM:
       return { storage: { ...state.storage} }
@@ -30,4 +30,4 @@ const storageReducer: Reducer<WebStorageState, acts.SetAction | acts.GetAction> 
   }
 }
 
-export default storageReducer
+export default storage
