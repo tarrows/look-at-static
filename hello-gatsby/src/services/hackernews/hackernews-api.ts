@@ -1,4 +1,4 @@
-import ApiService from './api'
+import ApiService from '../api'
 
 // HackerNews API Reference:
 // https://github.com/HackerNews/API

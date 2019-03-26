@@ -2,8 +2,8 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import { connect } from 'react-redux'
 import { Dispatch } from 'redux'
-import { StoryState, actionType } from '../services/hackernews-actions'
-import { StoryActions } from '../services/hackernews-actions'
+import { StoryState, actionType } from '../services/hackernews/hackernews-actions'
+import { StoryActions } from '../services/hackernews/hackernews-actions'
 
 interface OrganismProps {
   button: RequestButtonProps
