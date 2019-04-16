@@ -5,6 +5,8 @@
   "private": true,
   "scripts": {
     "start": "tsc && node dist/index.js",
+    "lint": "eslint src/** --ext .ts,.tsx",
+    "lint:fix": "npm run lint -- --fix",
     "tsc": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
