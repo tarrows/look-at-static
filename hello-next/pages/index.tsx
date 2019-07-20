@@ -1,5 +1,7 @@
 import * as React from 'react'
 
-const Index: React.FC = () => <h1>Hello, Next!!!</h1>
+import Hello from '../src/components/hello'
+
+const Index: React.FC = () => <Hello />
 
 export default Index
