@@ -25,12 +25,14 @@ export type Action = ReturnType<typeof requestHello | typeof successHello | type
 export interface HelloState {
   msg: string,
   count: number,
-  communicating?: boolean
+  communicating?: boolean,
+  nameList: { id: number; name: string }[]
 }
 
 const initialState: HelloState = {
   msg: '',
-  count: 0
+  count: 0,
+  nameList: []
 }
 
 const hello: Reducer<HelloState, Action> = (state = initialState, action): HelloState => {
@@ -38,7 +40,9 @@ const hello: Reducer<HelloState, Action> = (state = initialState, action): Hello
     case REQUEST_HELLO:
       return { ...state, communicating: true }
     case SUCCESS_HELLO:
-      return { msg: action.payload.msg, count: state.count + 1, communicating: false }
+      const msg = action.payload.msg
+      const count = state.count + 1
+      return { msg, count, communicating: false, nameList: [...state.nameList, { id: count, name: msg }] }
     case FAILURE_HELLO:
       return { ...state, msg: 'ERROR', communicating: false }
     default:

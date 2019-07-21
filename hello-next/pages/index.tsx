@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import Hello from '../src/components/hello'
+import Hello from '../src/containers/connected-hello'
 
 const Index: React.FC = () => <Hello />
 
