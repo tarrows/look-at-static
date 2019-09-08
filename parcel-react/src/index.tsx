@@ -1,5 +1,9 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
-import IndexPage from './templates/index-page'
+import { Provider } from 'react-redux'
+import configureStore from './store'
+import App from './App'
 
-ReactDOM.render(<IndexPage />, document.getElementById('root'))
+const store = configureStore()
+
+ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'))
