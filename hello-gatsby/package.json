@@ -7,7 +7,7 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "ncu": "ncu",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -29,13 +29,21 @@
     "styled-components": "^4.3.2"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^4.1.0",
+    "@testing-library/react": "^9.1.4",
+    "@types/jest": "^24.0.18",
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
     "@types/react-helmet": "^5.0.10",
     "@types/react-redux": "^7.1.2",
     "@types/redux-logger": "^3.0.7",
     "@types/styled-components": "^4.1.19",
+    "babel-jest": "^24.9.0",
+    "babel-preset-gatsby": "^0.2.13",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.9.0",
     "npm-check-updates": "^3.1.23",
+    "ts-jest": "^24.1.0",
     "typescript": "^3.6.3"
   }
 }
