@@ -2,20 +2,22 @@
   "name": "hello-next-v9",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3021"
+    "dev": "next dev -p 3021",
+    "ncu": "ncu"
   },
   "dependencies": {
-    "next": "^9.0.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-redux": "^7.1.0",
+    "next": "^9.1.1",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-redux": "^7.1.1",
     "redux": "^4.0.4",
     "redux-logger": "^3.0.6",
-    "redux-saga": "^1.0.5"
+    "redux-saga": "^1.1.1"
   },
   "devDependencies": {
-    "@types/node": "^12.6.8",
-    "@types/react": "^16.8.23",
-    "typescript": "^3.5.3"
+    "@types/node": "^12.11.1",
+    "@types/react": "^16.9.9",
+    "npm-check-updates": "^3.1.24",
+    "typescript": "^3.6.4"
   }
 }
